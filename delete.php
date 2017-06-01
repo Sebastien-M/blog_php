@@ -8,8 +8,8 @@
 </head>
 <body>
     <?php
-            unlink("posts/".$_POST['file']);
-            echo "<p>Ficheir supprimé</p>";
+        unlink("posts/".$_GET['file']);
+        echo "<p>Fichier supprimé</p>";
     ?>
     <a href="index.php">
         <button>Home</button>

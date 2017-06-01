@@ -15,7 +15,7 @@
     fwrite($file, $_POST['content']);
     fclose($file);
     echo "<p>Fichier modifié</p>"
-?>
+    ?>
         <a href="index.php">
         <button>Home</button>
     </a>

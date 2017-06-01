@@ -1,16 +1,33 @@
-form{
+html,body{
+    margin: 0;
+    padding: 0;
+}
+#createForm{
     display:flex;
     flex-direction: column;
     align-items:center;
     width: 30%;
     background-color: 9C9C9C;
     border-radius: 20px;
-    background-color: #BABABA;
+    background-color: black;
 }
 input{
     text-align: center;
 }
-main{
+header{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    height: 100px;
+}
+.index{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.create{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +36,41 @@ textarea{
     text-align: center;
 }
 body{
-    color:white;
-    background-color: #707070;
+    color:black;
+    background-color: white;
     font-family: 'Oswald', sans-serif;
+}
+#addPost{
+    border:none;
+    height:100%;
+    width: 100%;
+}
+.article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width:30%;
+    height: 400px;
+    
+}
+.text{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow-y: scroll;
+
+}
+#mofifyForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mofifyForm>textarea{
+    margin-top: 20px;
+    height:200px;
+    width: 30%;
 }
