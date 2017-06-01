@@ -17,16 +17,20 @@
         $indir = array_filter(scandir('posts/'), function($item) {
             return !is_dir('posts/' . $item);
         });
-        // unlink("posts/Fichier3.txt"); 
-        var_dump($indir);
-
         foreach($indir as $cle) {
+                echo "<div class='article'>";
                 echo "<h3>" . $cle . "</h3>";
                 $content = file_get_contents($dir . $cle);
                 echo $content;
                 echo "<form action='modify.php' method='POST'>
-                        <button name=".$cle.">Modifier</button>
+                    <input type='hidden' name='file' value='".$cle."'>
+                    <button>Modifier</button>
                     </form>";
+                echo "<form action='delete.php' method='POST'>
+                    <input type='hidden' name='file' value='".$cle."'>
+                    <button>Supprimer</button>
+                    </form>";
+                echo "</div>";
                 
         }
     ?>

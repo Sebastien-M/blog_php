@@ -10,16 +10,16 @@
 
 <body>
     <?php
-        foreach ($_POST as $key=>$values) {
-            $filename = str_replace("_",".",$key);
-            $content = file_get_contents("posts/". $filename);
-            echo "<form action='modif_sent.php' method='POST'>";
-            echo "<input type='text' name='".$filename."' value= '".$filename."'>";
-            echo "<textarea rows='4' name='".$content."' cols='50' id='contenu'>".$content."</textarea>";
-            echo "<input type='submit' value='Envoyer'>";
-            echo "</form>";
-            // echo $content;
-        }
+        $content = file_get_contents("posts/". $_POST['file']);
+        echo "<form action='modif_sent.php' method='POST'>";
+        echo "<input type='text' name='titre' value= '".$_POST['file']."'>";
+        // Previous file name
+        echo "<input type='hidden' name='previous' value= '".$_POST['file']."'>";
+        // Content of file
+        echo "<textarea rows='4' name='content' cols='50' id='contenu'>".$content."</textarea>";
+        echo "<input type='hidden' name='file' value='".$_POST['file']."'>";
+        echo "<button>Modifier</button>";
+        echo "</form>";
     ?>
 </body>
 
