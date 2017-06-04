@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="php/auth.php" method="POST">
+        <label for="name">Username</label>
+        <input type="text" name="name">
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass">
+        <input type="submit" value="Submit">
+    </form>
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40vh;
+        }
+    </style>
+</body>
+
+</html>
