@@ -1,22 +1,11 @@
 {
-    "user0": {
-        "name": "seb",
-        "password": "7b24afc8bc80e548d66c4e7ff72171c5"
-        //toor
-    },
     "user1": {
         "name": "user",
-        "password": "202cb962ac59075b964b07152d234b70"
-        //123
+        "password": "123"
     },
     "user2": {
         "name": "root",
-        "password": "7b24afc8bc80e548d66c4e7ff72171c5"
-        //toor
-    },
-    "user3": {
-        "name": "aaa",
-        "password": "b7c109a053ba6f63c92b7a64ff954dc2"
-        //lqsjd
+        "password": "toor"
     }
+
 }

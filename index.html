@@ -9,20 +9,27 @@
 </head>
 
 <body>
-    <form action="php/auth.php" method="POST">
-        <label for="name">Username</label>
-        <input type="text" name="name">
-        <label for="pass">Password</label>
-        <input type="password" id="pass" name="pass">
-        <input type="submit" value="Submit">
-    </form>
-
+    <main>
+        <form action="php/auth.php" method="POST">
+            <label for="name">Username</label>
+            <input type="text" name="name">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass">
+            <input type="submit" value="Submit">
+        </form>
+        <a href="new_user/new.html"><button>Nouvel utilisateur</button></a>
+    </main>
     <style>
-        form{
+        form {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 40vh;
+            margin-top: 30vh;
+        }
+        main{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </body>

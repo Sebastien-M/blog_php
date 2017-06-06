@@ -11,8 +11,7 @@
 
 <body>
     <header>
-        <h1>Posts</h1>
-        <a href="create.html"><button id="addPost">Add a Post</button></a>
+        <?php require("header.php") ?>
     </header>
     <main class="index">
         <?php
