@@ -13,6 +13,7 @@
     if(userverif() == true){
         echo "<p>Logged</p>";
         echo '<script> location.href="../index.php"</script>';
+        session_start();
     }
     else{
         echo "<p>Wrong user or password</p>";
@@ -23,7 +24,9 @@
         foreach ($files as $key) {
             $filename = $_POST['name']."."."txt";
             $content = file_get_contents("../utilisateurs/".$key);
-            if($filename == $key && md5($_POST['pass']) == $content){
+            if($_POST['name']."."."txt" == $key && md5($_POST['pass']) == $content){
+                session_start();
+                $_SESSION['user'] = $_POST['name'];
                 return true;
             }
         }
