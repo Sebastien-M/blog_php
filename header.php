@@ -9,10 +9,4 @@
         </div>
     </header>
     <style>
-        
-        /*header {
-            display: flex;
-            flex-direction: row;
-            background-color:gray;
-        }*/
     </style>

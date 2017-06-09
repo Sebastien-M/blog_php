@@ -25,7 +25,10 @@
             fclose($new_file);
         }
     ?>
-<p>Utilisateur créé</p>
+        <p>Utilisateur créé</p>
+        <a href="../index.php">
+        <button>Home</button>
+        </a>
 </body>
 
 </html>
